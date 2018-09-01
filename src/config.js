@@ -1,0 +1,1 @@
+export const apiDomain = 'insert your domain here'

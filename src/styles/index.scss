@@ -1,0 +1,17 @@
+// globals
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+  
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: black;
+}
