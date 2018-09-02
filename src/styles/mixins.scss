@@ -1,0 +1,11 @@
+@mixin removeBorder {
+
+    border-left: none; 
+    border-right: none; 
+    border-top: none; 
+    border-left-color: Transparent; 
+    border-right-color: Transparent; 
+    border-top-color: Transparent; 
+    overflow: auto;
+
+}

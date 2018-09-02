@@ -2,6 +2,7 @@
 @import './variables.scss';
 
 * {
+
   box-sizing: border-box;
   
   font-family: 'Montserrat', sans-serif;
@@ -10,8 +11,18 @@
 }
 
 body {
+
   margin: 0;
   padding: 0;
 
-  background-color: black;
+  background-color: lighten(grey, 40%)
+}
+
+textarea:hover,
+textarea:active,
+textarea:focus,
+label:focus,
+{
+    outline:0px !important;
+    -webkit-appearance:none;
 }

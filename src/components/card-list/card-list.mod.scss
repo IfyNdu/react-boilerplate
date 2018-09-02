@@ -1,0 +1,71 @@
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.cardListContainer {
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin: auto;
+
+  max-width: 1324px;
+  
+}
+
+.cardContainer {
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  margin: 1rem;
+  
+  background-color: white;
+  border-radius: 0.5rem;
+
+  box-shadow: 0px 2px 8px #888888;
+  
+  transition: box-shadow 0.3s ease;
+
+  &:hover { box-shadow: 4px 4px 8px #888888;}
+}
+
+.imageUpload {
+
+  width: $ad-width;
+  height: calc(#{$ad-height} / 3);
+
+  background-size: 'cover';
+  background-position: 'center';
+}
+
+.text { padding: 0.5rem }
+
+.inputArea {
+  
+  @include removeBorder;
+
+  width: 100%;
+
+  font-size: 0.8rem;
+  font-weight: 200;
+
+  &:focus { background-color: lighten($color: grey, $amount: 45%); }
+}
+
+.inputFile { font-size: 0.8rem; }
+
+.paidPost { padding: 0.5rem; }
+
+.fileUpload {
+
+  width: 300px;
+  padding: 0.5rem;
+
+  font-weight: 600;
+  
+}
+
+label { font-size: 0.8rem; }
