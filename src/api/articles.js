@@ -4,7 +4,7 @@ const getArticles = resource => {
 
   return new Promise ((resolve, reject) => {
 
-    axios.get(`${resource}/your-endpoint`)
+    axios.get(`${resource}`, { 'headers': {"Access-Control-Allow-Origin": "*"} })
       .then(resolve)
       .catch(reject);
   })

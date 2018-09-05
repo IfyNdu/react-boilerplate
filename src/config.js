@@ -1,1 +1,1 @@
-export const apiDomain = 'insert your domain here'
+export const apiDomain = 'http://localhost:5150/'

@@ -8,7 +8,6 @@ import styles from '../carousel.mod.scss';
 
 const Article = ({
 
-  animate,
   url,
   text,
   paidPost
@@ -23,11 +22,8 @@ const Article = ({
 
   return (
 
-    <div className={styles.articleContainer} >
-      <div className={classnames(
-        styles.imageContainer, {
-          [styles.animate]: animate
-        })}
+    <div className={styles.articleContainer}>
+      <div className={classnames(styles.imageContainer)}
         style={imageStyle} />
       {
         paidPost && (
